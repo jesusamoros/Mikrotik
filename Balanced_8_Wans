@@ -1,0 +1,186 @@
+
+# aug/13/2018 11:33:40 by RouterOS 6.35.2
+# software id = ZXDE-2U0J
+#
+/interface ethernet
+set [ find default-name=ether1 ] name=ether1-WAN1
+set [ find default-name=ether2 ] name=ether2-WAN2
+set [ find default-name=ether3 ] name=ether3-WAN3
+set [ find default-name=ether4 ] name=ether4-WAN4
+set [ find default-name=ether5 ] name=ether5-WAN5
+set [ find default-name=ether6 ] name=ether6-WAN6
+set [ find default-name=ether7 ] name=ether7-WAN7
+set [ find default-name=ether8 ] name=ether8-WAN8
+set [ find default-name=ether9 ] name=ether9-LAN
+set [ find default-name=ether10 ] master-port=ether1-WAN1
+set [ find default-name=ether11 ] master-port=ether1-WAN1
+set [ find default-name=ether12 ] master-port=ether1-WAN1
+set [ find default-name=ether13 ] master-port=ether1-WAN1
+set [ find default-name=ether14 ] master-port=ether1-WAN1
+set [ find default-name=ether15 ] master-port=ether1-WAN1
+set [ find default-name=ether16 ] master-port=ether1-WAN1
+set [ find default-name=ether17 ] master-port=ether1-WAN1
+set [ find default-name=ether18 ] master-port=ether1-WAN1
+set [ find default-name=ether19 ] master-port=ether1-WAN1
+set [ find default-name=ether20 ] master-port=ether1-WAN1
+set [ find default-name=ether21 ] master-port=ether1-WAN1
+set [ find default-name=ether22 ] master-port=ether1-WAN1
+set [ find default-name=ether23 ] master-port=ether1-WAN1
+set [ find default-name=ether24 ] master-port=ether1-WAN1
+set [ find default-name=sfp-sfpplus1 ] master-port=ether1-WAN1
+set [ find default-name=sfpplus2 ] master-port=ether1-WAN1
+/interface ethernet switch port
+set 0 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 1 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 2 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 3 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 4 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 5 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 6 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 7 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 8 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 9 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 10 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 11 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 12 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 13 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 14 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 15 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 16 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 17 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 18 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 19 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 20 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 21 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 22 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 23 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 24 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 25 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+set 26 per-queue-scheduling=wrr-group0:1,wrr-group0:2,wrr-group0:4,wrr-group0:8,wrr-group0:16,wrr-group0:32,wrr-group0:64,wrr-group0:128
+/ip address
+add address=10.240.1.2/24 comment=defconf interface=ether1-WAN1 network=10.240.1.0
+add address=10.240.2.2/24 interface=ether2-WAN2 network=10.240.2.0
+add address=10.10.0.5/21 interface=ether9-LAN network=10.10.0.0
+add address=10.240.3.2/24 interface=ether3-WAN3 network=10.240.3.0
+add address=10.240.4.2/24 interface=ether4-WAN4 network=10.240.4.0
+add address=10.240.5.2/24 interface=ether5-WAN5 network=10.240.5.0
+add address=10.240.6.2/24 interface=ether6-WAN6 network=10.240.6.0
+add address=10.240.7.2/24 interface=ether7-WAN7 network=10.240.7.0
+add address=10.240.8.2/24 interface=ether8-WAN8 network=10.240.8.0
+/ip dns
+set servers=8.8.8.8,1.1.1.1,8.8.4.4,1.0.0.1
+/ip firewall filter
+add chain=input dst-address=0.0.0.0 src-address=0.0.0.0
+add chain=output dst-address=0.0.0.0 src-address=0.0.0.0
+/ip firewall mangle
+add action=mark-connection chain=input in-interface=ether1-WAN1 new-connection-mark=wan1_conn passthrough=no
+add action=mark-connection chain=input in-interface=ether2-WAN2 new-connection-mark=wan2_conn passthrough=no
+add action=mark-connection chain=input in-interface=ether3-WAN3 new-connection-mark=wan3_conn passthrough=no
+add action=mark-connection chain=input in-interface=ether4-WAN4 new-connection-mark=wan4_conn passthrough=no
+add action=mark-connection chain=input in-interface=ether5-WAN5 new-connection-mark=wan5_conn passthrough=no
+add action=mark-connection chain=input in-interface=ether6-WAN6 new-connection-mark=wan6_conn passthrough=no
+add action=mark-connection chain=input in-interface=ether7-WAN7 new-connection-mark=wan7_conn passthrough=no
+add action=mark-connection chain=input in-interface=ether8-WAN8 new-connection-mark=wan8_conn passthrough=no
+add action=mark-routing chain=output connection-mark=wan1_conn new-routing-mark=to_wan1 passthrough=no
+add action=mark-routing chain=output connection-mark=wan2_conn new-routing-mark=to_wan2 passthrough=no
+add action=mark-routing chain=output connection-mark=wan3_conn new-routing-mark=to_wan3 passthrough=no
+add action=mark-routing chain=output connection-mark=wan4_conn new-routing-mark=to_wan4 passthrough=no
+add action=mark-routing chain=output connection-mark=wan5_conn new-routing-mark=to_wan5 passthrough=no
+add action=mark-routing chain=output connection-mark=wan6_conn new-routing-mark=to_wan6 passthrough=no
+add action=mark-routing chain=output connection-mark=wan7_conn new-routing-mark=to_wan7 passthrough=no
+add action=mark-routing chain=output connection-mark=wan8_conn new-routing-mark=to_wan8 passthrough=no
+/ip firewall nat
+add action=masquerade chain=srcnat out-interface=ether1-WAN1
+add action=masquerade chain=srcnat out-interface=ether2-WAN2
+add action=masquerade chain=srcnat out-interface=ether3-WAN3
+add action=masquerade chain=srcnat out-interface=ether4-WAN4
+add action=masquerade chain=srcnat out-interface=ether5-WAN5
+add action=masquerade chain=srcnat out-interface=ether6-WAN6
+add action=masquerade chain=srcnat out-interface=ether7-WAN7
+add action=masquerade chain=srcnat out-interface=ether8-WAN8
+/ip route
+add distance=1 gateway=10.240.1.1 routing-mark=to_wan1
+add distance=2 gateway=10.240.1.1 routing-mark=to_wan1
+add distance=4 gateway=10.240.1.1 routing-mark=to_wan1
+add distance=1 gateway=10.240.2.1 routing-mark=to_wan2
+add distance=2 gateway=10.240.2.1 routing-mark=to_wan2
+add distance=4 gateway=10.240.2.1 routing-mark=to_wan2
+add check-gateway=ping distance=1 gateway=8.8.4.4 routing-mark=to_wan3
+add distance=2 gateway=10.240.3.1 routing-mark=to_wan3
+add check-gateway=ping distance=2 gateway=8.8.4.4 routing-mark=to_wan3
+add distance=4 gateway=10.240.3.1 routing-mark=to_wan3
+add check-gateway=ping distance=1 gateway=8.8.8.8 routing-mark=to_wan4
+add check-gateway=ping distance=2 gateway=8.8.8.8 routing-mark=to_wan4
+add distance=2 gateway=10.240.4.1 routing-mark=to_wan4
+add distance=4 gateway=10.240.4.1 routing-mark=to_wan4
+add distance=1 gateway=10.240.5.1 routing-mark=to_wan5
+add check-gateway=ping distance=1 gateway=8.8.4.4 routing-mark=to_wan5
+add distance=2 gateway=10.240.5.1 routing-mark=to_wan5
+add check-gateway=ping distance=2 gateway=8.8.4.4 routing-mark=to_wan5
+add check-gateway=ping distance=4 gateway=8.8.8.8 routing-mark=to_wan5
+add check-gateway=ping distance=4 gateway=8.8.8.8 routing-mark=to_wan5
+add distance=4 gateway=10.240.5.1 routing-mark=to_wan5
+add distance=1 gateway=10.240.6.1 routing-mark=to_wan6
+add check-gateway=ping distance=1 gateway=8.8.8.8 routing-mark=to_wan6
+add distance=2 gateway=10.240.6.1 routing-mark=to_wan6
+add check-gateway=ping distance=2 gateway=8.8.8.8 routing-mark=to_wan6
+add check-gateway=ping distance=3 gateway=8.8.8.8 routing-mark=to_wan6
+add distance=4 gateway=10.240.6.1 routing-mark=to_wan6
+add distance=1 gateway=10.240.7.1 routing-mark=to_wan7
+add check-gateway=ping distance=1 gateway=8.8.4.4 routing-mark=to_wan7
+add distance=2 gateway=10.240.7.1 routing-mark=to_wan7
+add check-gateway=ping distance=2 gateway=8.8.4.4 routing-mark=to_wan7
+add distance=4 gateway=10.240.7.1 routing-mark=to_wan7
+add check-gateway=ping distance=1 gateway=8.8.8.8 routing-mark=to_wan8
+add distance=1 gateway=10.240.8.1 routing-mark=to_wan8
+add check-gateway=ping distance=2 gateway=8.8.8.8 routing-mark=to_wan8
+add distance=2 gateway=10.240.8.1 routing-mark=to_wan8
+add distance=4 gateway=10.240.8.1 routing-mark=to_wan8
+add check-gateway=ping distance=1 gateway=10.240.2.1,10.240.1.1,10.240.3.1,10.240.4.1,10.240.5.1,10.240.6.1,10.240.7.1,10.240.8.1
+add check-gateway=ping disabled=yes distance=1 gateway=10.240.7.1,10.240.8.1
+add check-gateway=ping disabled=yes distance=1 gateway=10.240.5.1,10.240.6.1
+add check-gateway=ping disabled=yes distance=1 gateway=10.240.3.1,10.240.4.1
+add check-gateway=ping distance=1 dst-address=8.8.4.4/32 gateway=10.240.2.1 scope=10
+add check-gateway=ping distance=1 dst-address=8.8.4.4/32 gateway=10.240.7.1 scope=10
+add check-gateway=ping distance=1 dst-address=8.8.4.4/32 gateway=10.240.3.1 scope=10
+add check-gateway=ping distance=1 dst-address=8.8.4.4/32 gateway=10.240.3.1 scope=10
+add check-gateway=ping distance=1 dst-address=8.8.4.4/32 gateway=10.240.5.1 scope=10
+add check-gateway=ping distance=2 dst-address=8.8.4.4/32 gateway=10.240.8.1 scope=10
+add check-gateway=ping distance=2 dst-address=8.8.4.4/32 gateway=10.240.6.1 scope=10
+add check-gateway=ping distance=2 dst-address=8.8.4.4/32 gateway=10.240.1.1 scope=10
+add check-gateway=ping distance=2 dst-address=8.8.4.4/32 gateway=10.240.4.1 scope=10
+add check-gateway=ping distance=1 dst-address=8.8.8.8/32 gateway=10.240.1.1 scope=10
+add check-gateway=ping distance=1 dst-address=8.8.8.8/32 gateway=10.240.4.1 scope=10
+add check-gateway=ping distance=1 dst-address=8.8.8.8/32 gateway=10.240.8.1 scope=10
+add check-gateway=ping distance=1 dst-address=8.8.8.8/32 gateway=10.240.6.1 scope=10
+add check-gateway=ping distance=1 dst-address=8.8.8.8/32 gateway=10.240.4.1 scope=10
+add check-gateway=ping distance=2 dst-address=8.8.8.8/32 gateway=10.240.5.1 scope=10
+add check-gateway=ping distance=2 dst-address=8.8.8.8/32 gateway=10.240.3.1 scope=10
+add check-gateway=ping distance=2 dst-address=8.8.8.8/32 gateway=10.240.7.1 scope=10
+add check-gateway=ping distance=2 dst-address=8.8.8.8/32 gateway=10.240.2.1 scope=10
+add check-gateway=ping distance=3 dst-address=8.8.8.8/32 gateway=10.240.6.1 scope=10
+add check-gateway=ping distance=4 dst-address=8.8.8.8/32 gateway=10.240.5.1 scope=10
+add check-gateway=ping distance=4 dst-address=8.8.8.8/32 gateway=10.240.5.1 scope=10
+
+
+/system clock
+set time-zone-name=Europe/Madrid
+/system lcd
+set contrast=0 enabled=no port=parallel type=24x4
+/system lcd page
+set time disabled=yes display-time=5s
+set resources disabled=yes display-time=5s
+set uptime disabled=yes display-time=5s
+set packets disabled=yes display-time=5s
+set bits disabled=yes display-time=5s
+set version disabled=yes display-time=5s
+set identity disabled=yes display-time=5s
+set ether1-WAN1 disabled=yes display-time=5s
+set ether2-WAN2 disabled=yes display-time=5s
+set ether3-WAN3 disabled=yes display-time=5s
+set ether4-WAN4 disabled=yes display-time=5s
+set ether5-WAN5 disabled=yes display-time=5s
+set ether6-WAN6 disabled=yes display-time=5s
+set ether7-WAN7 disabled=yes display-time=5s
+set ether8-WAN8 disabled=yes display-time=5s
+set ether9-LAN disabled=yes display-time=5s
