@@ -1,0 +1,20 @@
+#check out internet from interface 
+# notify email and disable interface
+
+
+/system script add name=ping3 source={
+  :if ([/ping 1.1.1.1 count=5 interface=ether8-WAN8] = 0) do={
+    /interface disable ether8-WAN8
+    /tool e-mail send to=yourmail@gmail.com subject="email test" body="ping down wanX" start-tls=yes
+    }
+  }
+
+
+#configure mail account
+
+   /tool e-mail
+set address=smtp.gmail.com
+set port=587
+set from=yourmail@gmail.com
+set user=yourmail@gmail.com
+set password=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
